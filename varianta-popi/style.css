@@ -1,0 +1,116 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/**************** 
+    Header 
+*****************/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 136px;
+    background-color: #00A7A4;
+    border: solid 2px #F67102;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 326px;
+    margin-left: 20px;
+}
+
+/* Navigace */
+nav {
+    margin-right: 30px;
+    z-index: 100;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #FDE33C;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    font-weight: 600;;
+}
+
+.menu-icon {
+    display: none;
+    margin-right: 30px;
+}
+
+/*********************
+    Welcome section
+*********************/
+.welcome {
+    background-color: #87BBAE;
+    background: url("./img/background-popi2.jpg") no-repeat;
+    min-height: calc(100vh - 100px);
+}
+    
+
+.welcome {
+    background-color: #87BBAE;
+    background: url("./img/background-popi2.jpg");
+    min-height: calc(100vh - 100px);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welcome .overlay1, .welcome .overlay2{
+    position: relative;
+    background: rgba(255, 255, 255, 0.5); /* Poloprůhledná bílá */
+    padding: 40px; /* Pro prostor kolem textu */
+    color: #F67102;
+    margin:40px;
+}
+.welcome .overlay1{
+    flex: 2; /* První div zabere 2/3 dostupného prostoru */
+}
+
+.welcome .overlay2{
+    flex: 1; /* Druhý div zabere 1/3 dostupného prostoru */
+}
+.welcome img{
+    margin: 20px;
+    width: 200px;
+}
+.welcome h1{
+    margin: 20px 20px 20px 0px;
+    color: #808DF0;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+footer{
+    background-color: #00A7A4;
+    color: #fff;
+    text-align: center;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    text-align: center;
+    font-size: 80%;
+}

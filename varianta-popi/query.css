@@ -1,0 +1,73 @@
+
+@media (max-width: 900px){
+    .welcome h1{
+        font-size:40px;
+    }
+
+}
+
+@media (max-width: 765px) {
+    header {
+        position: relative;
+    }
+    header nav {
+        /* display: none; */
+        position: absolute;
+        top: 136px;
+        background-color: #F67102;
+        width: 100%;
+        border: 2px solid #00A7A4;
+    }
+
+    header nav {
+        display: none;  /*dopnili jsme */
+        position: absolute;
+        top: 136px;
+        background-color: #A574CA;
+        width: 100%;
+        border: 2px solid #F67102;
+    }
+
+    header nav li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #FDE33C;
+        font-size: 40px;
+    }
+
+    .welcome {
+        flex-direction: column; /* Na malých obrazovkách zobrazí divy pod sebou */
+      }
+
+}
+
+@media (min-width: 765px){
+    header nav {
+        display: block !important;     /* JS menu */  
+    } 
+}
+
+@media (max-width: 400px){
+    .logo img {
+        width: 200px;
+        margin-left: 10px;
+    }
+    .welcome h1{
+        font-size:25px;
+    }
+    header{
+        height: 86px;
+    }
+
+    header nav {
+        /* display: none; */
+        position: absolute;
+        top: 86px;
+    }
+}
